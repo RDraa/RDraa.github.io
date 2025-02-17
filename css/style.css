@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+/* ======= Header & Navigation ======= */
+header {
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #629584;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #629584;
+    border-bottom: 3px solid #629584;
+}
+
+/* ======= Home ======= */
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 10rem;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.home .home-content h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 0;
+}
+
+span {
+    color: #5C8374;
+}
+
+.home-content h3 {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    max-width: 80%;
+}
+
+.home-img {
+    border-radius: 100%;
+}
+
+.home-img img {
+    width: 12.5vw;
+    max-width: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+}
+
+/* ======= ICONS ======= */
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #3C3D37;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #3C3D37;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #5C8374;
+    box-shadow: 0 0 25px #5C8374;
+}
+
+/* ======= Portfolio ======= */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 70vh;
+    padding: 0 20%;
+    margin-top: 1cm;
+    margin-bottom: 6rem;
+}
+
+.portfolio-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.portfolio .portfolio-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 0;
+}
+
+.portfolio-content h2 {
+    font-size: 3.3rem;
+    font-weight: 700;
+    margin-top: 1.7rem;
+}
+
+.portfolio-content h3 {
+    font-size: 2.5rem;
+    /* font-weight: 700; */
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.portfolio-content p {
+    font-size: 1.6rem;
+    max-width: 800px;
+    width: 100%;
+    text-align: justify;
+    color: #dddcdc;
+}
+
+.portfolio-content img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.mitos img{
+    width: 49.7%;
+    height: auto;
+    max-width: 100%;
+}
+
+.mathwiz1 {
+    width: 34% !important;
+    height: auto;
+    max-width: 100%;
+}
+
+.mathwiz2 {
+    width: 65% !important;
+    height: auto;
+    max-width: 100%;
+}
+
+ul {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color: #dddcdc;
+}
+
+ul ul {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color: #dddcdc;
+}
+
+.btn {
+    margin-top: 1.2rem;
+    display: inline-block;
+    padding: 9px 14px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(31, 31, 31);
+    background-color: #dddcdc;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.btn:hover {
+    background-color: #afafaf;
+    transform: scale(1.01);
+}
+
+
+/* ======= Footer ======= */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 15px;
+    color: white;
+}
+
+footer p, footer a {
+    margin: 0;
+    font-size: 13px;
+    text-decoration: none;
+    color: #747070;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+/* ======== Responsi HP & Tab ======== */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+        margin-left: 1.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .portfolio {
+        padding: 0 10%;
+    }
+
+    .portfolio-content h1 {
+        font-size: 3rem;
+    }
+
+    .portfolio-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-content h3 {
+        font-size: 2rem;
+    }
+
+    .portfolio-content p {
+        font-size: 1.4rem;
+    }
+
+    ul {
+        font-size: 1.4rem;
+    }
+
+    ul ul{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+        margin-left: 0;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .home-content p {
+        font-size: 1.3rem;
+    }
+
+    .home-img img {
+        width: 40vw;
+    }
+
+    .portfolio {
+        padding: 0 5%;
+    }
+
+    .portfolio-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-content h3 {
+        font-size: 2rem;
+    }
+
+    .portfolio-content p {
+        font-size: 1.3rem;
+    }
+
+    .mitos img{
+        width: 49.5%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    footer p, footer a {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        font-size: 1.4rem;
+    }
+
+    ul ul{
+        font-size: 1.4rem;
+    }
+}
